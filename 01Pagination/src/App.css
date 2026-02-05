@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.parent-heading{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.product-card-parent{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem
+}
+
+.product-card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 3px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-card-img{
+  width: 200px;
+  height:200px
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.page-number{
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 7px;
+  border: 1px solid black;
+  margin: 4px;
 }
 
-.card {
-  padding: 2em;
+.page-number:hover{
+  background-color: antiquewhite;
 }
 
-.read-the-docs {
-  color: #888;
+.add-class{
+  pointer-events: none;
+}
+
+.active-page{
+  background-color: #ff8e513b;
 }
