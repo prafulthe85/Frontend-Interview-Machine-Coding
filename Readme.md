@@ -2,6 +2,9 @@
 
 ## 1. Pagination Implementation at Frontend
 
+### Prerequisites
+- Use Dummy json for getting json data
+
 ### Objective
 - Implement client-side pagination in a React application.
 - Display large datasets in smaller, manageable chunks.
