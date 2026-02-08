@@ -41,7 +41,7 @@ const TabForm = () =>{
                     err.interests = 'Select atleast 1 Interest'
                 }
                 setErrors(err);
-                return err.length >0 ? false : true;
+                return err.interests ? false : true;
             }
         }
     ]
@@ -67,7 +67,22 @@ const TabForm = () =>{
             setActive(prev=> prev+1);
         }
     }
+    const validateAllTabs = () => {
+        for (let i = 0; i < tabs.length; i++) {
+            const valid = tabs[i].validate();
+            if (!valid) {
+                setActive(i);   // jump to first invalid tab
+                return false;
+            }
+        }
+        return true;
+    };
+
+
     const submitForm = () =>{
+        const allValid = validateAllTabs();
+
+        if (!allValid) return;
         if(tabs[active].validate()){
             // hit the api call
             console.log('finaldata', data)
