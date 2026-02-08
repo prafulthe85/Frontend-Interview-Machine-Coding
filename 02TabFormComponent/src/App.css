@@ -1,0 +1,31 @@
+.heading-container{
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.tabs-container{
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+
+.tab-body{
+    border: 1px solid black;
+    height: 200px;
+    padding: 0.5rem;
+}
+
+.activeTab{
+    pointer-events: none;
+    background-color: #a1e6a454;
+}
+.nonActiveTab{
+    background-color: #e5c9a459;
+}
+.error-msg{
+    display: block;
+    font-size: small;
+    color: red;
+}
