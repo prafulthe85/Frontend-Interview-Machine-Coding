@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css"
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 24;
 
 const ProductCard = ( {title, image} )=>{
   return (
-    <div className="s">
+    <div className="product-card">
       <span className="product-card-title">{title}</span>
         <img className="product-card-img" src={image} alt={title} />
     </div>
