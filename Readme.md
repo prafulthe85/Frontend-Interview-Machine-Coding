@@ -12,7 +12,7 @@
 **Ans:** To memoize expensive computations and avoid unnecessary recalculations.
 
 ### Q4. When should you avoid `useMemo`?
-**Ans:** For cheap calculations → unnecessary complexity.
+**Ans:** For cheap calculations → unnecessary complexity. 
 
 ### Q5. Difference between `useMemo` and `useCallback`?
 **Ans:**
